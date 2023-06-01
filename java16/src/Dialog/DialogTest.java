@@ -14,17 +14,18 @@ public class DialogTest extends WindowAdapter {
    private Dialog info;
 
    public void windowClosing(WindowEvent e) {
+//      System.exit(0);
       info.dispose();
    }
 
    public DialogTest() {
       f = new Frame("Parent");
       f.setSize(300, 200);
-      f.setLocation(2500, 10);
+      f.setLocation(150, 10);
 
       info = new Dialog(f, "Information", true);
       info.setSize(140, 90);
-      info.setLocation(2550, 50);
+      info.setLocation(75, 50);
       info.setLayout(new FlowLayout());
       info.addWindowListener(this);
 
